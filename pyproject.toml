@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fastapi-docker-lambda"
+version = "0.1.0"
+description = ""
+authors = ["ogapy <kyon6690@gmail.com>"]
+readme = "README.md"
+# packages = [{include = "fastapi_docker_lambda"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.101.0"
+mangum = "^0.17.0"
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = "^0.21.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
