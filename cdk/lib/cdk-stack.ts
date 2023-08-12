@@ -10,6 +10,7 @@ export class CdkStack extends cdk.Stack {
 
     const dockerImage = new ecr_assets.DockerImageAsset(this, 'DockerImage', {
       directory: '../',
+      file: 'Dockerfile',
     });
 
     const handler = new lambda.DockerImageFunction(this, 'Handler', {
