@@ -9,7 +9,7 @@ export class CdkStack extends cdk.Stack {
     super(scope, id, props);
 
     const dockerImage = new ecr_assets.DockerImageAsset(this, 'DockerImage', {
-      directory: '../',
+      directory: '../../',
       file: 'Dockerfile',
     });
 
